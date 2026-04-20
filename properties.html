@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CityGate Properties | All Properties</title>
+
+    <!-- style CSS -->
+     <link rel="stylesheet" href="./style/style.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+s/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- House logos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: "Montserrat", sans-serif;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .accent-gold {
+        color: #d4af37;
+      }
+
+      .bg-accent-gold {
+        background-color: #d4af37;
+      }
+      .nav-link {
+        position: relative;
+        padding-bottom: 6px;
+      }
+
+      .nav-link::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: #d4af37;
+        transition: width 0.35s ease;
+      }
+
+      .nav-link:hover::after {
+        width: 100%;
+      }
+
+      .nav-link.active::after {
+        width: 100%;
+      }
+    </style>
+  </head>
+
+  <body class="bg-[#f5f5f5] text-slate-800 antialiased">
+    <header
+      class="bg-[#0b2545] text-white px-6 md:px-14 py-5 flex justify-between items-center sticky top-0 z-50 shadow-lg"
+    >
+      <div class="flex items-center gap-2">
+  <a href="home.html"><img
+          src="./image/real estate logo.png"
+          alt="CityGate Logo"
+          class="h-8 w-8 object-contain"
+        /></a>
+        <a href="home.html">
+        <span class="text-2xl font-bold tracking-tighter">
+          CITY<span class="font-light opacity-80">GATE</span>
+        </span></a>
+  </span>
+</div>
+      <nav
+        class="hidden md:flex space-x-8 text-sm font-semibold uppercase tracking-widest"
+      >
+        <a
+          href="home.html"
+          class="nav-link hover:text-blue-300 transition-colors"
+          >Home</a
+        >
+        <a
+          href="properties.html"
+          class="nav-link hover:text-blue-300 transition-colors"
+          >Properties</a
+        >
+        <a
+          href="contact.html"
+          class="nav-link hover:text-blue-300 transition-colors"
+          >Contact</a
+        >
+      </nav>
+      <div class="md:hidden text-2xl cursor-pointer">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+
+    <section
+      class="relative bg-gradient-to-b from-[#0b2545]/80 to-[#0b2545]/80 bg-cover bg-center text-white text-center py-28"
+      style="
+        background-image:
+          linear-gradient(rgba(11, 37, 69, 0.8), rgba(11, 37, 69, 0.8)),
+          url(&quot;https://cdn.homedit.com/wp-content/uploads/2017/05/America-Most-Expensive-Bel-Air-Los-Angeles-Residence.jpg&quot;);
+      "
+    >
+      <h4 class="text-xs md:text-sm uppercase tracking-[0.3em] mb-4 font-light">
+        Our Exclusive Properties
+      </h4>
+      <h1 class="text-4xl md:text-5xl font-bold">All Properties</h1>
+    </section>
+
+    <section class="bg-white py-6 px-6 md:px-14 border-b border-gray-200">
+      <div
+        class="max-w-7xl mx-auto flex flex-wrap gap-4 items-center justify-between"
+      >
+        <div class="flex gap-4 flex-wrap">
+          <button
+            id="filter-all"
+            class="filter-btn px-6 py-2 bg-[#0b2545] text-white text-xs uppercase tracking-widest font-bold hover:bg-slate-800 transition-colors"
+          >
+            All
+          </button>
+          <button
+            id="filter-buy"
+            class="filter-btn px-6 py-2 border border-gray-300 text-slate-700 text-xs uppercase tracking-widest font-bold hover:bg-gray-50 transition-colors"
+          >
+            Buy
+          </button>
+          <button
+            id="filter-rent"
+            class="filter-btn px-6 py-2 border border-gray-300 text-slate-700 text-xs uppercase tracking-widest font-bold hover:bg-gray-50 transition-colors"
+          >
+            Rent
+          </button>
+        </div>
+        <div class="text-sm text-slate-500">
+          <span id="property-count" class="font-bold">4</span> properties found
+        </div>
+      </div>
+    </section>
+
+    <!-- PROPERTY GRID -->
+    <section class="properties">
+      <!-- CARD 1 -->
+      <div class="card">
+        <div class="image">
+          <span class="tag buy">BUY</span>
+          <img
+            src="https://img-v2.gtsstatic.net/reno/imagereader.aspx?url=https%3A%2F%2Fm.sothebysrealty.com%2F1194i215%2Fk2yaswjnap2b4j208vzcpypmz1i215&w=3840&q=75&option=N&permitphotoenlargement=false&fallbackimageurl=https://www.sothebysrealty.com/resources/siteresources/commonresources/images/nophoto/no_image_new.png"
+          />
+        </div>
+        <div class="info">
+          <h3>444 Tennyson Ave, Palo Alto, CA 94301</h3>
+          <p class="location">San Jose, CA, USA</p>
+          <p class="price">$24,888,000</p>
+
+          <div class="details">
+            <div><i class="fa-solid fa-bed"></i> 5 Bedrooms</div>
+            <div><i class="fa-solid fa-bath"></i> 7 Bathrooms</div>
+            <div><i class="fa-solid fa-ruler-combined"></i> 8,219 Sqft</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="card">
+        <div class="image">
+          <span class="tag buy">BUY</span>
+          <img
+            src="https://www.hauteresidence.com/wp-content/uploads/2017/02/124.jpg"
+          />
+        </div>
+        <div class="info">
+          <h3>613 N Canon Dr., Beverly Hills, CA 90210</h3>
+          <p class="location">Los Angeles, CA, USA</p>
+          <p class="price">$39,995,000</p>
+
+          <div class="details">
+            <div><i class="fa-solid fa-bed"></i> 8 Bedrooms</div>
+            <div><i class="fa-solid fa-bath"></i> 17 Bathrooms</div>
+            <div><i class="fa-solid fa-ruler-combined"></i> 21,000+ Sqft</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="card">
+        <div class="image">
+          <span class="tag rent">RENT</span>
+          <img
+            src="https://www.viviun.com/i/1/l/279625/29K27G/1/92BF90/1/40/1-2-3-story-house-plans-for-sale-and-rent-in-san-juan-county-washington-usa.webp"
+          />
+        </div>
+        <div class="info">
+          <h3>30 Park Place, New York, NY 10007</h3>
+          <p class="location">New York County, New York, USA</p>
+          <p class="price">$11,000 / month</p>
+
+          <div class="details">
+            <div><i class="fa-solid fa-bed"></i> 4 Bedrooms</div>
+            <div><i class="fa-solid fa-bath"></i> 4 Bathrooms</div>
+            <div><i class="fa-solid fa-ruler-combined"></i> 3220 Sqft</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="card">
+        <div class="image">
+          <span class="tag rent">RENT</span>
+          <img
+            src="https://i.viviun.net/i/1/l/282600/AAHHL1/1/D674F1/villa-for-rent-in-hollywood-california-usa.webp"
+          />
+        </div>
+        <div class="info">
+          <h3>22043 Columbus Avenue</h3>
+          <p class="location">Hollywood, California, USA</p>
+          <p class="price">$45,000 / month</p>
+
+          <div class="details">
+            <div><i class="fa-solid fa-bed"></i> 5 Bedrooms</div>
+            <div><i class="fa-solid fa-bath"></i> 7 Bathrooms</div>
+            <div><i class="fa-solid fa-ruler-combined"></i> 5,006 Sqft</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="card">
+        <div class="image">
+          <span class="tag buy">BUY</span>
+          <img
+            src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&q=80&w=800"
+          />
+        </div>
+        <div class="info">
+          <h3>825 Ocean Avenue</h3>
+          <p class="location">Santa Monica, CA, USA</p>
+          <p class="price">$12,500,000</p>
+
+          <div class="details">
+            <div><i class="fa-solid fa-bed"></i> 6 Bedrooms</div>
+            <div><i class="fa-solid fa-bath"></i> 8 Bathrooms</div>
+            <div><i class="fa-solid fa-ruler-combined"></i> 7,500 Sqft</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 6 -->
+      <div class="card">
+        <div class="image">
+          <span class="tag buy">BUY</span>
+          <img
+            src="./image/Home With Pool.jpeg"
+          />
+        </div>
+        <div class="info">
+          <h3>1550 Lombard Street</h3>
+          <p class="location">San Francisco, CA, USA</p>
+          <p class="price">$8,750,000</p>
+
+          <div class="details">
+            <div><i class="fa-solid fa-bed"></i> 5 Bedrooms</div>
+            <div><i class="fa-solid fa-bath"></i> 7 Bathrooms</div>
+            <div><i class="fa-solid fa-ruler-combined"></i> 7,200 Sqft</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 7 -->
+      <div class="card">
+        <div class="image">
+          <span class="tag rent">RENT</span>
+          <img
+            src="https://images.unsplash.com/photo-1566908829550-e6551b00979b?auto=format&fit=crop&q=80&w=800"
+          />
+        </div>
+        <div class="info">
+          <h3>720 Park Avenue</h3>
+          <p class="location">New York, NY, USA</p>
+          <p class="price">$25,000 / month</p>
+
+          <div class="details">
+            <div><i class="fa-solid fa-bed"></i> 6 Bedrooms</div>
+            <div><i class="fa-solid fa-bath"></i> 8 Bathrooms</div>
+            <div><i class="fa-solid fa-ruler-combined"></i> 5,800 Sqft</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 8 -->
+      <div class="card">
+        <div class="image">
+          <span class="tag rent">RENT</span>
+          <img
+            src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&q=80&w=800"
+          />
+        </div>
+        <div class="info">
+          <h3>3344 Sunset Boulevard</h3>
+          <p class="location">Los Angeles, CA, USA</p>
+          <p class="price">$18,500 / month</p>
+
+          <div class="details">
+            <div><i class="fa-solid fa-bed"></i> 5 Bedrooms</div>
+            <div><i class="fa-solid fa-bath"></i> 6 Bathrooms</div>
+            <div><i class="fa-solid fa-ruler-combined"></i> 6,200 Sqft</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 9 -->
+      <div class="card">
+        <div class="image">
+          <span class="tag rent">RENT</span>
+          <img
+            src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&q=80&w=800"
+          />
+        </div>
+        <div class="info">
+          <h3>950 Fifth Avenue</h3>
+          <p class="location">Manhattan, NY, USA</p>
+          <p class="price">$30,000 / month</p>
+
+          <div class="details">
+            <div><i class="fa-solid fa-bed"></i> 4 Bedrooms</div>
+            <div><i class="fa-solid fa-bath"></i> 5 Bathrooms</div>
+            <div><i class="fa-solid fa-ruler-combined"></i> 4,500 Sqft</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 10 -->
+      <div class="card">
+        <div class="image">
+          <span class="tag rent">RENT</span>
+          <img
+            src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&q=80&w=800"
+          />
+        </div>
+        <div class="info">
+          <h3>1888 Kalakaua Avenue</h3>
+          <p class="location">Honolulu, HI, USA</p>
+          <p class="price">$15,000 / month</p>
+
+          <div class="details">
+            <div><i class="fa-solid fa-bed"></i> 3 Bedrooms</div>
+            <div><i class="fa-solid fa-bath"></i> 4 Bathrooms</div>
+            <div><i class="fa-solid fa-ruler-combined"></i> 5,200 Sqft</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 11 -->
+      <div class="card">
+        <div class="image">
+          <span class="tag rent">RENT</span>
+          <img
+            src="https://bigsee.eu/wp-content/uploads/2020/08/00_rado-engineering.jpg"
+          />
+        </div>
+        <div class="info">
+          <h3>34, Чедомир Миндеровиќ</h3>
+          <p class="location">Skopje, North Macedonia</p>
+          <p class="price">$10,400 / month</p>
+
+          <div class="details">
+            <div><i class="fa-solid fa-bed"></i> 6 Bedrooms</div>
+            <div><i class="fa-solid fa-bath"></i> 3 Bathrooms</div>
+            <div><i class="fa-solid fa-ruler-combined"></i> 9149 Sqft</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="bg-[#0b2545] text-white py-14 px-6 md:px-14 border-t border-blue-900"
+    >
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+          <div>
+            <div class="text-2xl font-bold tracking-tighter mb-4">CITYGATE</div>
+            <p class="text-blue-300 text-xs leading-relaxed">
+              Premium real estate services in San Francisco since 1994. Your
+              trusted partner in luxury properties.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-sm uppercase tracking-widest mb-4">
+              Quick Links
+            </h4>
+            <ul class="space-y-2 text-sm text-blue-300">
+              <li>
+                <a href="./home.html" target="_blank" class="hover:text-white transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="./properties.html" target="_blank" class="hover:text-white transition-colors"
+                  >Properties</a
+                >
+              </li>
+              <li>
+                <a href="./contact.html" target="_blank" class="hover:text-white transition-colors"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-sm uppercase tracking-widest mb-4">
+              Contact
+            </h4>
+            <ul class="space-y-2 text-sm text-blue-300">
+              <li><i class="fa-solid fa-phone mr-2"></i> (389)77 804 350</li>
+              <li>
+                <i class="fa-solid fa-envelope mr-2"></i> citygate@dollicons.com
+              </li>
+              <li>
+                <i class="fa-solid fa-location-dot mr-2"></i> San Francisco, CA
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-sm uppercase tracking-widest mb-4">
+              Follow Us
+            </h4>
+            <div class="flex space-x-4 text-xl">
+              <a href="https://www.facebook.com/" target="_blank" class="hover:text-accent-gold transition-colors"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/#" target="_blank" class="hover:text-accent-gold transition-colors"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://mk.linkedin.com/" target="_blank" class="hover:text-accent-gold transition-colors"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://x.com/" target="_blank" class="hover:text-accent-gold transition-colors"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="pt-8 border-t border-blue-900 flex flex-col md:flex-row justify-between items-center text-xs text-blue-400 uppercase tracking-widest"
+        >
+          <p>© 2026 CityGate Properties. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script/properties.js"></script>
+  </body>
+</html>
+
